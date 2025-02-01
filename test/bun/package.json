@@ -1,0 +1,18 @@
+{
+  "name": "kysely-crypto-bun-test",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "better-sqlite3": "^11.8.1",
+    "vitest": "^3.0.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "type": "module",
+  "dependencies": {
+    "kysely": "^0.27.5"
+  },
+  "scripts": {
+    "test": "vitest run --dir ./"
+  }
+}
