@@ -38,7 +38,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        deno-version: [1.x.x, 2.x.x]
+        deno-version: [2.x.x]
 
     steps:
       - uses: actions/checkout@v4
@@ -70,7 +70,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        bun-version: [1.x.x]
+        bun-version: [1.2.0]
 
     steps:
       - uses: actions/checkout@v4
