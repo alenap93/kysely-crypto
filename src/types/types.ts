@@ -18,10 +18,25 @@ export type CryptoAlgorithm =
   | 'RC4Drop'
 
 export type CryptoParameters = {
+  /**
+   * cipher algorithms
+   */
   cryptoAlgorithm?: CryptoAlgorithm
+  /**
+   * custom secretKey
+   */
   secretKey?: string
+  /**
+   * custom iv in hex to be converted in word array (using CryptoJS.enc.Hex.parse(iv))
+   */
   iv?: string
+  /**
+   * block padding, default: Pkcs7
+   */
   padding?: Padding
+  /**
+   * Block Modes, default: CBC
+   */
   mode?: Mode
 }
 
@@ -33,15 +48,15 @@ export type NestedKeysOrString<T> = NestedKeys<T> | (string & {})
 
 export type CryptoOptions<T> = {
   /**
-   * field to decrypt/decode in result (use alias if it is used), or in '=' and '!=' where condition
+   * field to decrypt in result (use alias if it is used)
    */
   fieldsToDecrypt: NestedKeysOrString<T>[]
   /**
-   * field to encrypt/encode/hash during insert and update
+   * field to encrypt during insert and update, or in '=' and '!=' where condition (use alias if it is used)
    */
   fieldsToEncrypt: NestedKeysOrString<T>[]
   /**
-   * options to encrypt/encode/hash
+   * encryption options
    */
   cryptoParameters: CryptoParameters
 }

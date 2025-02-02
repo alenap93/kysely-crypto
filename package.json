@@ -1,5 +1,5 @@
 {
-  "name": "kysely-crypt",
+  "name": "kysely-crypto",
   "version": "1.0.0",
   "description": "Crypto plugin for kysely",
   "repository": {
