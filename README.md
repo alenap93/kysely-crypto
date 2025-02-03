@@ -41,7 +41,7 @@ npm i kysely kysely-crypto
 
     * iv: *custom iv in hex to be converted in word array (using CryptoJS.enc.Hex.parse(iv))*
 
-    * mode: *block modes, default: CBC*
+    * mode: *block mode, default: CBC*
 
     * padding: *block padding, default: Pkcs7*
 

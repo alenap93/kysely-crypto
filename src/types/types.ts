@@ -35,7 +35,7 @@ export type CryptoParameters = {
    */
   padding?: Padding
   /**
-   * Block Modes, default: CBC
+   * block mode, default: CBC
    */
   mode?: Mode
 }

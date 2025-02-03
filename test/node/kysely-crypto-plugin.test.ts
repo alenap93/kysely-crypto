@@ -1,7 +1,7 @@
 import { Generated, Kysely, SqliteDialect } from 'kysely'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import Database from 'better-sqlite3'
-import { KyselyCryptoPlugin } from '../../src/kysely-crypto-plugin'
+import { KyselyCryptoPlugin } from '../../src'
 
 export interface Database {
   person: PersonTable
