@@ -15,7 +15,7 @@
 
   
 
-Crypto plugin for kysely fully typed, developed for Node.js but also runs on Deno and Bun; with this plugin you can encrypt or decrypt fields using crypto-js library.
+Crypto plugin for kysely, fully typed, developed for Node.js but also runs on Deno and Bun; with this plugin you can encrypt or decrypt fields using crypto-js library.
 
 
 
