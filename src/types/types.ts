@@ -19,7 +19,7 @@ export type CryptoAlgorithm =
 
 export type CryptoParameters = {
   /**
-   * cipher algorithms
+   * cipher algorithm
    */
   cryptoAlgorithm?: CryptoAlgorithm
   /**
