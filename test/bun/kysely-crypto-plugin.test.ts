@@ -17,7 +17,7 @@ export interface PersonTable {
   last_name: string
 }
 
-describe(`KyselyCryptoPlugi - BUN`, () => {
+describe(`KyselyCryptoPlugin - BUN`, () => {
   let kyselyInstance: Kysely<Database>
 
   beforeEach(async () => {

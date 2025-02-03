@@ -25,7 +25,7 @@ export interface PersonTable {
   last_name: string
 }
 
-describe(`KyselyCryptoPlugi - DENO`, () => {
+describe(`KyselyCryptoPlugin - DENO`, () => {
   let kyselyInstance: Kysely<Database>
 
   beforeEach(async () => {
