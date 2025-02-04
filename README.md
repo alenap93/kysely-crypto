@@ -48,6 +48,8 @@ npm i kysely kysely-crypto
 
 **How to use**
 
+***WARNING: fields must be of string types***
+
     const kyselyInstance = new Kysely<Database>({
         dialect: new SqliteDialect({
             database: new Database(':memory:'),
